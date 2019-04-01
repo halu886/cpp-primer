@@ -1,5 +1,5 @@
 #include <iostream>
-#include <math.h>
+int simon(int);
 int main()
 {
     using namespace std;
@@ -7,13 +7,13 @@ int main()
     cout << "Pick an integer";
     int count;
     cin >> count;
-    simon(count);
-    cout << "Done!" << endl;
+    int pounds = simon(count);
+    cout << "Done!"
+         << "pounds" << endl;
     return 0;
 }
 
-void simon(int n)
+int simon(int n)
 {
-    using namespace std;
-    cout << "Simon says touch your toes" << n << "times." << endl;
+    return 14 * n;
 }
