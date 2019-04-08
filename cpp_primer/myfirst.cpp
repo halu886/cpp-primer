@@ -1,28 +1,14 @@
 #include <iostream>
-#define ZERO 0
-#include <climits>
 int main()
 {
     using namespace std;
-    short sam = SHRT_MAX;
-    unsigned short sue = sam;
+    int chest = 42;
+    int waist = 0x42;
+    int inseam = 042;
 
-    cout << "Sam has " << sam << " dollars and Sue has" << sue;
-    cout << "dollars deposited" << endl
-         << "Add $1 to each account." << endl
-         << "Now";
-    sam = sam + 1;
-    sue = sue + 1;
-    cout << "Sam has" << sam << " dollars and Sue has " << sue;
-    cout << " dollars deposited.\nPoor Sam!" << endl;
-
-    sam = ZERO;
-	sue = ZERO;
-    cout << sam << sue;
-    sam = sam - 1;
-    sue = sue - 1;
-    cout << sam << sue;
-    cout << "dollars deposited" << endl;
+    cout << " chest=" << chest;
+    cout << "waist=" << waist;
+    cout << "inseam=" << inseam;
     system("pause");
     return 0;
-}
+}	
