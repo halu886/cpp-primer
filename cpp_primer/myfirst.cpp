@@ -1,14 +1,14 @@
 #include <iostream>
+using namespace std;
 int main()
 {
     using namespace std;
-    int chest = 42;
-    int waist = 0x42;
-    int inseam = 042;
+    char ch;
 
-    cout << " chest=" << chest;
-    cout << "waist=" << waist;
-    cout << "inseam=" << inseam;
+    cout << "enter" << endl;
+    cin >> ch;
+    cout << "Hola;";
+    cout << "Thank you for" << ch << endl;
     system("pause");
     return 0;
-}	
+}
