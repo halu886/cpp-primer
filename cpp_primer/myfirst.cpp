@@ -3,17 +3,12 @@ using namespace std;
 int main()
 {
     using namespace std;
-    char ch = 'M';
-    int i = ch;
-    cout << "ascII" << ch << "is" << i << endl;
-
-    cout << "add to code:" << endl;
-    ch = ch + 1;
-    i = ch;
-    cout << "ascII" << ch << "is" << i << endl;
-    cout << "Displaying char :";
-    cout.put(ch);
-    cout.put('|');
+    cout << "\aOperation \"HyperH\" is now activated!\n";
+    cout << "Enter you agent code:_______\b\b\b\b\b\b\b\b\b";
+    long code;
+    cin >> code;
+    cout << "\aYou entered" << code << "...\n";
+    cout << "\aCode verified!\n";
     system("pause");
     return 0;
 }
