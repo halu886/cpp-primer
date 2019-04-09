@@ -3,12 +3,20 @@ using namespace std;
 int main()
 {
     using namespace std;
-    cout << "\aOperation \"HyperH\" is now activated!\n";
-    cout << "Enter you agent code:_______\b\b\b\b\b\b\b\b\b";
-    long code;
-    cin >> code;
-    cout << "\aYou entered" << code << "...\n";
-    cout << "\aCode verified!\n";
+    float hats, heads;
+
+    cout.setf(ios_base::fixed, ios_base::floatfield);
+    cout << "Enter:";
+    cin >> hats;
+    cout << "Enter:";
+    cin >> heads;
+
+    cout << "hats= " << hats << "; heads= " << heads << endl;
+    cout << "hats+heads =" << hats + heads << endl;
+    cout << "hats-heads =" << hats - heads << endl;
+    cout << "hats*heads =" << hats * heads << endl;
+    cout << "hats-heads =" << hats / heads << endl;
+
     system("pause");
     return 0;
 }
