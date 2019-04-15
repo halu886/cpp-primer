@@ -3,20 +3,14 @@ using namespace std;
 int main()
 {
     using namespace std;
-    float hats, heads;
+    const int Lbs_per_stn = 14;
+    int lbs;
+    cout << "Enter your Weight in pounds";
+    cin >> lbs;
 
-    cout.setf(ios_base::fixed, ios_base::floatfield);
-    cout << "Enter:";
-    cin >> hats;
-    cout << "Enter:";
-    cin >> heads;
-
-    cout << "hats= " << hats << "; heads= " << heads << endl;
-    cout << "hats+heads =" << hats + heads << endl;
-    cout << "hats-heads =" << hats - heads << endl;
-    cout << "hats*heads =" << hats * heads << endl;
-    cout << "hats-heads =" << hats / heads << endl;
-
+    int stone = lbs / Lbs_per_stn;
+    int pounds = lbs % Lbs_per_stn;
+    cout << lbs << "pounds are" << stone << "stone" << pounds << "pound(s).\n";
     system("pause");
     return 0;
 }
