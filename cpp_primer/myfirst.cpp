@@ -4,14 +4,22 @@ int main()
 {
     using namespace std;
 
-    cout.setf(ios_base ::fixed, ios_base::floatfield);
-    float tree = 3;
+    int auks, bats, coots;
 
-    int guess(3.9832);
-    int debt = 7.2E12;
-    cout << "tree = " << tree << endl;
-    cout << "guess = " << guess << endl;
-    cout << "debt = " << debt << endl;
+    auks = 19.99 + 11.99;
+
+    bats = (int)19.99 + (int)11.99;
+    coots = int(19.99) + int(11.99);
+    cout << "auks = " << auks << ",bats= " << bats;
+
+    cout << ", coots = " << coots << endl;
+
+    char ch = 'Z';
+
+    cout << "The code for " << ch << " is ";
+    cout << int(ch) << endl;
+    cout << "yes";
+    cout << static_cast<int>(ch) << endl;
     system("pause");
     return 0;
 }
