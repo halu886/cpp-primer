@@ -3,14 +3,15 @@ using namespace std;
 int main()
 {
     using namespace std;
-    const int Lbs_per_stn = 14;
-    int lbs;
-    cout << "Enter your Weight in pounds";
-    cin >> lbs;
 
-    int stone = lbs / Lbs_per_stn;
-    int pounds = lbs % Lbs_per_stn;
-    cout << lbs << "pounds are" << stone << "stone" << pounds << "pound(s).\n";
+    cout.setf(ios_base ::fixed, ios_base::floatfield);
+    float tree = 3;
+
+    int guess(3.9832);
+    int debt = 7.2E12;
+    cout << "tree = " << tree << endl;
+    cout << "guess = " << guess << endl;
+    cout << "debt = " << debt << endl;
     system("pause");
     return 0;
 }
