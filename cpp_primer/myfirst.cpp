@@ -3,16 +3,13 @@ using namespace std;
 int main()
 {
     using namespace std;
-    const int ArSize = 20;
-    char name[ArSize];
-    char dessert[ArSize];
-    cin >> name ;
-	cout << endl;
-	cout << endl;
-    cin >> dessert ;
+    int year;
 
-    cout << name << endl;
-    cout << dessert << endl;
+    cin >> year;
+    cout << "address";
+    char address[80];
+    cin.getline(address, 80);
+    cout << "year" << year << "address" << address;
     system("pause");
     return 0;
 }
