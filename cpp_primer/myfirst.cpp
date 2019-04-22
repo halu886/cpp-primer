@@ -4,23 +4,32 @@ using namespace std;
 int main()
 {
     using namespace std;
-    char a[20];
-    char d[20] = "afsd";
 
-    string b;
-    string c = "sadfasdf";
+    string s1 = "asfasdfasdf";
+    string s2, s3;
 
-    cout << "a";
-    cin >> a;
+    cout << "=\n";
+    s2 = s1;
 
-    cout << "b";
-    cin >> b;
+    cout << "s1:" << s1 << "s2:" << s2 << endl;
 
-    cout << "a" << a << "b" << b << "c" << c << "d" << d;
+    s2 = "buuuuuuu";
 
-    cout << "d[2] " << d[2];
-    cout << "c[2] " << c[2];
+    cout << "s2: " << s2;
 
+    s3 = s1 + s2;
+
+    cout << "s3: " << s3;
+
+    cout << "+=\n";
+
+    s1 += s2;
+
+    cout << "s1: "<< s1;
+
+    s2 += "for a day";
+
+    cout << "s2" << s2 << endl;
     system("pause");
     return 0;
 }
