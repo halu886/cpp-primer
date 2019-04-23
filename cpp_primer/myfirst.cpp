@@ -1,27 +1,18 @@
 #include <iostream>
 #include <string>
 using namespace std;
-struct inflatable
-{
-    char name[20];
-    float volume;
-    double price;
-};
 
 int main()
 {
     using namespace std;
-    inflatable douque = {
-        "weqrqe",
-        0.25,
-        132.43
-	};
-    cout << "price" << douque.name << endl;
-    cout << douque.price << endl;
+    int higgens = 5;
+    int *pt = &higgens;
 
-    inflatable choice = douque;
-    cout << "price" << choice.name << endl;
-    cout << choice.price << endl;
+    cout << "higgens " << higgens
+         << " &higgens " << &higgens;
+
+    cout << "pt" << pt
+         << " *pt" << *pt;
     system("pause");
     return 0;
 }
