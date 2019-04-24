@@ -5,24 +5,30 @@ using namespace std;
 int main()
 {
     using namespace std;
-    int inti = 1000;
+    char animal[20] = "asdfasdf";
 
-    int *pi = new int;
-    *pi = 1001;
+    const char *bird = "rqwef";
 
-    cout << "v " << inti << " l " << &inti << endl;
-    cout << "v " << *pi << " l " << pi << endl;
+    char *ps;
 
-    double *pd = new double;
-    *pd = 1000000001.0;
+    cout << animal << " and ";
+    cout << bird << "\n";
 
-    cout << "v " << *pd << " l " << pd << endl;
-    cout << "vl " << &pd << endl;
+    cout << "enter a kind";
+    cin >> animal;
 
-    cout << "sizeof pt" << sizeof(pi) << endl;
-    cout << "sizeof *pt" << sizeof(*pi) << endl;
-    cout << "sizeof pd" << sizeof(pd) << endl;
-    cout << "sizeof *pd" << sizeof(*pd) << endl;
+    ps = animal;
+
+    cout << ps << "\n";
+    cout << animal << (int *)animal << endl;
+    cout << ps << " at " << (int *)ps << endl;
+
+    ps = new char[strlen(animal) + 1];
+
+    strcpy_s(ps, animal);
+
+    cout << animal << " at " << (int *)animal << endl;
+    cout << ps << " at " << (int *)ps << endl;
     system("pause");
     return 0;
 }
