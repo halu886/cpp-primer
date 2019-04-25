@@ -1,34 +1,32 @@
 #include <iostream>
-#include <string>
+#include <array>
+#include <vector>
 using namespace std;
 
 int main()
 {
     using namespace std;
-    char animal[20] = "asdfasdf";
+    double a1[4] = {1.2, 34.2, 53.2, 43.4};
+    vector<double> a2(4);
 
-    const char *bird = "rqwef";
+    a2[0] = 1.0 / 4.0;
+    a2[1] = 1.0 / 5.0;
+    a2[2] = 1.0 / 6.0;
+    a2[3] = 1.0 / 8.0;
 
-    char *ps;
+    array<double, 4> a3 = {3.15, 4.23, 4.123, 1.43};
+    array<double, 4> a4;
+    a4 = a3;
 
-    cout << animal << " and ";
-    cout << bird << "\n";
+    cout << "a1[2]: " << a1[2] << " at " << &a1[2] << endl;
+    cout << "a2[2]: " << a2[2] << " at " << &a2[2] << endl;
+    cout << "a3[2]: " << a3[2] << " at " << &a3[2] << endl;
+    cout << "a4[2]: " << a4[2] << " at " << &a4[2] << endl;
 
-    cout << "enter a kind";
-    cin >> animal;
-
-    ps = animal;
-
-    cout << ps << "\n";
-    cout << animal << (int *)animal << endl;
-    cout << ps << " at " << (int *)ps << endl;
-
-    ps = new char[strlen(animal) + 1];
-
-    strcpy_s(ps, animal);
-
-    cout << animal << " at " << (int *)animal << endl;
-    cout << ps << " at " << (int *)ps << endl;
+    a1[-2] = 23.2;
+    cout << "a1[-2]: " << a1[-2] << " at " << &a1[-2] << endl;
+    cout << "a2[2]: " << a2[2] << " at " << &a2[2] << endl;
+    cout << "a3[2]: " << a3[2] << " at " << &a3[2] << endl;
     system("pause");
     return 0;
 }
